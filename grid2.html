@@ -11,6 +11,21 @@
         text-align:center;
         background-color:black;
     }
+    #logo-button-Wrapper{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+    #logo{
+        width:100px;
+    }
+    #logo img{
+        width:100%;
+    }
+    #logo, #signInButtonWrapper{
+        margin:2%;
+    }
     .homeCinema{
         width:350px;
         height:250px;
@@ -28,11 +43,11 @@
         color:white;
         border:2px solid grey;
     }
-        input{
+        #form input{
             width:80%;
             padding:15px;
         }
-        button{
+        #form button{
             width:50%;
             padding:15px;
         }
@@ -46,17 +61,23 @@
             width:80%;
             margin:0 auto;
         }
+        #logo{
+            width:150px;
+        }
+        #logo img{
+            width:100%;
+        }
         #inputBox{
             width:60%;
         }
         #try30daysButton{
             width:40%;
         }
-            input{
+            #form input{
                 width:100%;
                 padding:15px;
             }
-            button{
+            #form button{
                 width:100%;
                 padding:15px;
             }    
@@ -73,6 +94,10 @@
 <body>
     <div id="wrapper">
         <div id="head">
+            <div id="logo-button-Wrapper">
+                <div id="logo"><img src="./assets/logo.png"></div>
+                <div id="signInButtonWrapper"><button type="button">Sign In</button></div>
+            </div>
             <div id="headText"><h1>Unlimited movies, TV shows, and more.</h1></div>
             <h3>Watch anywhere. Cancel anytime.</h3>
             <h4>Ready to watch? Enter your email to create or access your account</h4>
