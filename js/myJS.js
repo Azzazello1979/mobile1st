@@ -11,12 +11,12 @@ $('#navButton').click(function(){
         let newGrid = currentGrid.replace('"nav nav nav nav nav nav nav nav"', '');
         $('#wrapper').css('grid-template-areas', newGrid);
         navEnabled = false;
-        console.log(navEnabled);
+        //console.log(navEnabled);
     } else {
         $( "<nav>Navigation</nav>" ).insertAfter( "header" );
         $('#wrapper').css('grid-template-areas', gridWithNav);
         navEnabled = true;
-        console.log(navEnabled);
+        //console.log(navEnabled);
     }
         
 
