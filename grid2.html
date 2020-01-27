@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Layout CSS Grid 2</title>
+    <title>Netflix with CSS FlexBox</title>
 </head>
+<style>
+    body{
+        text-align:center;
+        background-color:black;
+    }
+        #wrapper{
+        background-color:black;
+    }
+        #wrapper > * {
+        padding: 20px;
+        color:white;
+        border:2px solid grey;
+    }
+        input{
+            width:80%;
+            padding:15px;
+        }
+        button{
+            width:50%;
+            padding:15px;
+        }
+
+
+    @media screen and (min-width: 950px){
+        #form{
+            display:flex;
+            justify-content: space-around;
+            border:1px solid green;
+            width:80%;
+            margin:0 auto;
+        }
+        #inputBox{
+            width:60%;
+        }
+        #try30daysButton{
+            width:40%;
+        }
+            input{
+                width:100%;
+                padding:15px;
+            }
+            button{
+                width:100%;
+                padding:15px;
+            }    
+        
+    }
+
+</style>
 <body>
-    
+    <div id="wrapper">
+        <div id="head">
+            <div id="headText"><h2>Unlimited movies, TV shows, and more.</h2></div>
+            <div id="form">
+                <div id="inputBox"><input type="email" placeholder="Email address"></div>
+                <div id="try30daysButton"><button type="button">TRY 30 DAYS FREE</button></div>
+            </div>
+        </div>
+        <div id="pane1"><h2>Enjoy on your TV.</h2></div>
+        <div id="pane2"><h2>Download your shows to watch on the go.</h2></div>
+        <div id="pane3"><h2>Watch everywhere.</h2></div>
+        <div id="faq"><h2>Frequently Asked Questions</h2></div>
+        <div id="footer">footer</div>
+    </div>
 </body>
 </html>
