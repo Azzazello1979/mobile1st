@@ -7,9 +7,17 @@
     <title>Netflix with CSS FlexBox</title>
 </head>
 <style>
+    @import"https://fonts.googleapis.com/css?family=Open+Sans&display=swap";
     body{
         text-align:center;
         background-color:black;
+        font-size: 1em !important;
+        color:white;
+        font-family: 'Open Sans', sans-serif !important;
+    }
+    #head{
+        background-image: url("./assets/head-bkg.jpg");
+        background-position: -200px;
     }
     #logo-button-Wrapper{
         width:100%;
@@ -41,15 +49,23 @@
         #wrapper > * {
         padding: 20px;
         color:white;
-        border:2px solid grey;
+        border:3px solid #292726;
     }
+        button{
+            color:white;
+            background:red;
+            padding:15px;
+            border:0px;
+        }
+        input{
+            padding:15px;
+            border:0px;
+        }
         #form input{
             width:80%;
-            padding:15px;
         }
         #form button{
             width:50%;
-            padding:15px;
         }
 
 
@@ -57,7 +73,6 @@
         #form{
             display:flex;
             justify-content: space-around;
-            border:1px solid green;
             width:80%;
             margin:0 auto;
         }
@@ -75,15 +90,13 @@
         }
             #form input{
                 width:100%;
-                padding:15px;
             }
             #form button{
                 width:100%;
-                padding:15px;
             }    
         .pane{
             display:flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
         .left, .right{
             padding:10px;
